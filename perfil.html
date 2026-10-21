@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion - Learn.Viky</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Icono pequeno que aparece en la pestana del navegador. -->
+    <link rel="icon" href="img/logofoca.png" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <main class="profile-page">
+    
+        <div class="profile-heading">
+            <div>
+                <span class="profile-eyebrow">MI CUENTA</span>
+                <h1>Tu perfil</h1>
+                <p>Administra tu información personal y los datos de tu cuenta.</p>
+            </div>
+        </div>
+    
+        <div class="profile-layout">
+    
+            <!-- COLUMNA IZQUIERDA -->
+            <aside class="profile-sidebar">
+    
+                <section class="profile-user-card">
+    
+                    <div class="profile-avatar">
+                        <img
+                            src="img/logoperfil.png"
+                            alt="Foto de perfil"
+                            id="profileImage"
+                        >
+    
+                        <button
+                            class="profile-avatar-edit"
+                            type="button"
+                            aria-label="Cambiar foto de perfil"
+                        >
+                            ✎
+                        </button>
+                    </div>
+    
+                    <h2>Nombre de usuario</h2>
+    
+                    <div class="profile-status">
+                        <span></span>
+                        Cuenta activa
+                    </div>
+    
+                    <p class="profile-user-description">
+                        Estudiante de Learn.Viky
+                    </p>
+    
+                </section>
+    
+    
+                <!-- ESTADÍSTICAS -->
+                <section class="profile-stats">
+    
+                    <div class="profile-stat">
+                        <div class="profile-stat-icon">R</div>
+    
+                        <div>
+                            <strong>12</strong>
+                            <span>Rutinas</span>
+                        </div>
+                    </div>
+    
+                    <div class="profile-stat">
+                        <div class="profile-stat-icon">N</div>
+    
+                        <div>
+                            <strong>34</strong>
+                            <span>Notas</span>
+                        </div>
+                    </div>
+    
+                    <div class="profile-stat">
+                        <div class="profile-stat-icon">D</div>
+    
+                        <div>
+                            <strong>8</strong>
+                            <span>Días estudiando</span>
+                        </div>
+                    </div>
+    
+                </section>
+    
+            </aside>
+    
+    
+            <!-- COLUMNA DERECHA -->
+            <section class="profile-content">
+    
+                <div class="profile-card">
+    
+                    <div class="profile-card-header">
+    
+                        <div>
+                            <span>INFORMACIÓN PERSONAL</span>
+                            <h2>Datos de tu cuenta</h2>
+                        </div>
+    
+                        <button
+                            type="button"
+                            class="profile-edit-btn"
+                            id="editProfileBtn"
+                        >
+                            ✎ Editar perfil
+                        </button>
+    
+                    </div>
+    
+    
+                    <form class="profile-form" id="profileForm">
+    
+                        <!-- NOMBRE -->
+                        <div class="profile-field">
+    
+                            <label for="profileName">
+                                Nombre
+                            </label>
+    
+                            <div class="profile-input">
+    
+                                <span class="profile-input-icon">
+                                    👤
+                                </span>
+    
+                                <input
+                                    id="profileName"
+                                    name="nombre"
+                                    type="text"
+                                    value="Nombre de usuario"
+                                    disabled
+                                >
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        <!-- CORREO -->
+                        <div class="profile-field">
+    
+                            <label for="profileEmail">
+                                Correo electrónico
+                            </label>
+    
+                            <div class="profile-input">
+    
+                                <span class="profile-input-icon">
+                                    @
+                                </span>
+    
+                                <input
+                                    id="profileEmail"
+                                    name="correo"
+                                    type="email"
+                                    value="ejemplo@gmail.com"
+                                    disabled
+                                >
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        <!-- CONTRASEÑA -->
+                        <div class="profile-field">
+    
+                            <label>
+                                Contraseña
+                            </label>
+    
+                            <div class="password-row">
+    
+                                <div>
+                                    <strong>••••••••••••</strong>
+    
+                                    <span>
+                                        Protege tu cuenta utilizando una contraseña segura.
+                                    </span>
+                                </div>
+    
+                                <button
+                                    type="button"
+                                    class="change-password-btn"
+                                >
+                                    Cambiar contraseña
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        <!-- BOTONES CUANDO EDITA -->
+                        <div
+                            class="profile-form-actions"
+                            id="profileActions"
+                        >
+    
+                            <button
+                                type="button"
+                                class="profile-cancel-btn"
+                                id="cancelProfileBtn"
+                            >
+                                Cancelar
+                            </button>
+    
+                            <button
+                                type="submit"
+                                class="profile-save-btn"
+                            >
+                                Guardar cambios
+                            </button>
+    
+                        </div>
+    
+                    </form>
+    
+                </div>
+    
+    
+                <!-- SEGURIDAD -->
+                <div class="profile-card profile-security">
+    
+                    <div class="security-icon">
+                        ✓
+                    </div>
+    
+                    <div>
+                        <h3>Estado de la cuenta</h3>
+                        <p>
+                            Tu cuenta se encuentra activa y puedes utilizar
+                            todas las funciones disponibles en Learn.Viky.
+                        </p>
+                    </div>
+    
+                </div>
+    
+    
+                <!-- ZONA PELIGRO -->
+                <div class="profile-danger">
+    
+                    <div>
+    
+                        <span>ZONA DE CUENTA</span>
+    
+                        <h3>Eliminar cuenta</h3>
+    
+                        <p>
+                            Esta acción eliminará permanentemente tu cuenta
+                            y la información asociada a ella.
+                        </p>
+    
+                    </div>
+    
+                    <button
+                        class="profile-delete-btn"
+                        type="button"
+                    >
+                        Eliminar cuenta
+                    </button>
+    
+                </div>
+    
+            </section>
+    
+        </div>
+    
+    </main>
+    
+</body>
+
+</html>
